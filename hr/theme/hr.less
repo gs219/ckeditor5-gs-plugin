@@ -1,0 +1,50 @@
+// hr {
+// 	display: block;
+// 	clear: both;
+
+// 	&.ck-widget {
+// 		display: flex;
+// 		border: none;
+// 		border-radius: 2px;
+// 		height: auto;
+// 		margin-top: 1ch;
+// 		margin-bottom: 1ch;
+// 		text-align: center;
+// 		background: #ececec;
+// 		&::before {
+// 			content: '分割线';
+// 			display: block;
+// 			margin: -1ch auto;
+// 			padding: 0 1ch;
+// 			background: #fff;
+// 		}
+// 		&.clearfix-only {
+// 			background: repeating-linear-gradient(-45deg, transparent, transparent 2ch, #efefef 2ch, #efefef 4ch);
+// 			&::before {
+// 				content: 'Clearfix (invisible)';
+// 			}
+// 		}
+// 	}
+
+// 	// &.clearfix-only:not(.ck-widget) {
+// 	// 	margin: 0;
+// 	// 	padding: 0;
+// 	// 	border: 0;
+// 	// 	height: 0;
+// 	// 	visibility: hidden;
+// 	// }
+// }
+
+.divider {
+	padding: 15px 0;
+	margin: 15px 0;
+	> hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 3em auto;
+		width: 320px;
+		padding: 0;
+	}
+}
