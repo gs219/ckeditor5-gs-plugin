@@ -1,42 +1,55 @@
 {
-	"name": "@ckeditor5/ckeditor5-gs-plugins",
-	"version": "1.0.0",
-	"description": "Gs plugins for CKEditor5",
-	"keywords": ["ckeditor", "ckeditor5", "ckeditor 5", "ckeditor5-personal-plugin", "ckeditor5-plugin"],
-	"dependencies": {
-		"@ckeditor/ckeditor5-core": "^12.1.0",
-		"@ckeditor/ckeditor5-ui": "^12.1.0",
-		"@ckeditor/ckeditor5-utils": "^12.1.0",
-		"@ckeditor/ckeditor5-widget": "^11.0.0"
-	},
-	"devDependencies": {
-		"@ckeditor/ckeditor5-editor-classic": "^12.1.0",
-		"@ckeditor/ckeditor5-engine": "^13.0.0",
-		"eslint": "^5.16.0",
-		"eslint-config-ckeditor5": "^1.0.13",
-		"husky": "^1.3.1",
-		"lint-staged": "^8.1.5"
-	},
-	"engines": {
-		"node": ">=8.0.0",
-		"npm": ">=5.7.1"
-	},
-	"author": "gs",
-	"license": "GPL-2.0-or-later",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/gs219/ckeditor5-gs-plugins.git"
-	},
-	"files": ["lang", "src", "theme"],
-	"scripts": {
-		"lint": "eslint --quiet '**/*.js'"
-	},
-	"lint-staged": {
-		"**/*.js": ["eslint --quiet"]
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	}
+  "name": "@didask/ckeditor5-hr",
+  "version": "1.0.0",
+  "description": "Horizontal Separator plugin for CKEditor5",
+  "keywords": [
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "ckeditor5-feature",
+    "ckeditor5-plugin"
+  ],
+  "dependencies": {
+    "@ckeditor/ckeditor5-core": "^12.0.0",
+    "@ckeditor/ckeditor5-ui": "^12.0.0",
+    "@ckeditor/ckeditor5-utils": "^12.0.0",
+    "@ckeditor/ckeditor5-widget": "^11.0.0"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-editor-classic": "^12.0.0",
+    "@ckeditor/ckeditor5-engine": "^13.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-ckeditor5": "^1.0.13",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.7.1"
+  },
+  "author": "Didask (https://www.didask.com/)",
+  "license": "GPL-2.0-or-later",
+  "bugs": "https://github.com/didask/ckeditor5-hr/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/didask/ckeditor5-hr.git"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme"
+  ],
+  "scripts": {
+    "lint": "eslint --quiet '**/*.js'"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --quiet"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
